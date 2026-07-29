@@ -100,10 +100,10 @@ const Navbar = () => {
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
       <div className="flex items-center gap-1 bg-[#1a1a1a]/80 backdrop-blur-md border border-white/10 px-2 py-2 rounded-full shadow-2xl">
         <NavItem icon={<Home className="w-4 h-4" />} href="#" />
-        <NavItem icon={<FileText className="w-4 h-4" />} href="#projects" />
+        <NavItem icon={<FileText className="w-4 h-4" />} href="/resume.pdf" external />
         <NavItem icon={<Github className="w-4 h-4" />} href={PERSONAL_DETAILS.github} external />
         <NavItem icon={<Linkedin className="w-4 h-4" />} href={PERSONAL_DETAILS.linkedin} external />
-        <NavItem icon={<Mail className="w-4 h-4" />} href={`mailto:${PERSONAL_DETAILS.email}`} external />
+        <NavItem icon={<Mail className="w-4 h-4" />} href={`mailto:${PERSONAL_DETAILS.email}`} />
       </div>
     </div>
   );
@@ -181,26 +181,43 @@ export function App() {
           <div className="space-y-6">
             <h2 className="text-xl font-bold text-white">About me</h2>
             <p className="leading-relaxed text-gray-400">
-              I am a passionate developer from <span className="text-white font-medium">{PERSONAL_DETAILS.location}</span>. 
-              Currently a {PERSONAL_DETAILS.education}. I love building cool stuff and enjoy learning Computer Science.
-              I have a great sense of <span className="text-white font-medium">problem solving</span> and designing intuitive user interfaces.
-              I have worked on various projects ranging from system utilities to AI-powered games.
+              I'm a full-stack developer based in <span className="text-white font-medium">{PERSONAL_DETAILS.location}</span>, currently
+              in my {PERSONAL_DETAILS.education}. I enjoy turning ideas into clean, functional products — from AI-powered
+              tools to everyday utilities — with a strong focus on <span className="text-white font-medium">problem solving</span> and
+              thoughtful, intuitive interfaces. Outside of coursework, I'm usually deep in a side project, exploring new
+              tech, or competing in hackathons.
             </p>
             
             <div className="flex flex-wrap gap-4">
               <StatusBadge label="Open for work" color="red" />
               <StatusBadge label="Open to freelance" color="green" />
             </div>
-            
+
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white text-black font-semibold text-sm hover:bg-gray-200 transition-colors w-fit"
+            >
+              <FileText className="w-4 h-4" />
+              View Resume
+            </a>
+
             <div className="flex flex-wrap gap-3 mt-4 text-sm text-gray-500">
-               <div className="flex items-center gap-1">
+               <a
+                 href={`mailto:${PERSONAL_DETAILS.email}`}
+                 className="flex items-center gap-1 hover:text-white transition-colors"
+               >
                  <Mail className="w-4 h-4" />
                  {PERSONAL_DETAILS.email}
-               </div>
-               <div className="flex items-center gap-1">
+               </a>
+               <a
+                 href={`tel:${PERSONAL_DETAILS.phone}`}
+                 className="flex items-center gap-1 hover:text-white transition-colors"
+               >
                  <Phone className="w-4 h-4" />
                  {PERSONAL_DETAILS.phone}
-               </div>
+               </a>
             </div>
           </div>
         </section>
@@ -284,6 +301,32 @@ export function App() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Contact CTA */}
+        <section className="mb-20 text-center bg-[#0a0a0a] border border-white/10 rounded-2xl px-6 py-14">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+            Like what you see?
+          </h2>
+          <p className="text-gray-400 max-w-md mx-auto mb-8">
+            I'm open for work and freelance opportunities. Reach out and let's build something great together.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={`mailto:${PERSONAL_DETAILS.email}`}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black font-semibold text-sm hover:bg-gray-200 transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              Email Me
+            </a>
+            <a
+              href={`tel:${PERSONAL_DETAILS.phone}`}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-gray-300 font-semibold text-sm hover:bg-white/5 hover:text-white transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              Call Me
+            </a>
           </div>
         </section>
 
