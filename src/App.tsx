@@ -45,35 +45,35 @@ const TECH_STACK = [
 
 const PROJECTS = [
   {
-    title: "Habit Tracker",
-    description: "A comprehensive application to track daily habits and visualize progress over time. Features include streaks, reminders, and detailed analytics.",
-    tech: ["React", "Node.js", "MongoDB"],
-    link: "#",
-    github: "#",
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop"
+    title: "Chess",
+    description: "A full-featured chess platform with local multiplayer and an AI opponent powered by a custom minimax engine with alpha-beta pruning across three difficulty levels.",
+    tech: ["React", "Vite", "JavaScript"],
+    link: "https://chess-drab-three.vercel.app",
+    github: "https://github.com/zaid-ctrlx/chess",
+    image: "/projects/chess-grandmaster.png"
   },
   {
     title: "Digital Signage System",
     description: "A centralized system for managing and displaying content across multiple digital screens. Supports video, images, and real-time announcements.",
     tech: ["TypeScript", "WebSocket", "React"],
     link: "#",
-    github: "#",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+    github: "https://github.com/AbdulRehman-18/_TV",
+    image: "/projects/digital-signage.jpg"
   },
   {
     title: "Resume Roster",
     description: "An intelligent resume builder and management tool. Helps users create ATS-friendly resumes with customizable templates and suggestions.",
     tech: ["Next.js", "Tailwind", "OpenAI API"],
-    link: "#",
-    github: "#",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2070&auto=format&fit=crop"
+    link: "https://roastmyresume-alpha.vercel.app",
+    github: "https://github.com/zaid-ctrlx/RoastMyResume",
+    image: "/projects/resume-roster.jpg"
   },
   {
-    title: "AI Powered XO Game",
+    title: "Tic-Tac-Toe",
     description: "A classic Tic-Tac-Toe game enhanced with an unbeatable AI opponent using Minimax algorithm. Challenge yourself against the machine.",
     tech: ["Python", "React", "AI"],
-    link: "#",
-    github: "#",
+    link: "https://tic-tac-toe-zeta-coral-95.vercel.app",
+    github: "https://github.com/zaid-ctrlx/tic-tac-toe",
     image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?q=80&w=2070&auto=format&fit=crop"
   }
 ];
@@ -83,7 +83,7 @@ const EXPERIENCE = [
     company: "Freelance / Personal Projects",
     role: "Full Stack Developer",
     period: "2+ Years",
-    description: "Developed various web applications including a Habit Tracker and Digital Signage System. Gained strong proficiency in modern web technologies."
+    description: "Developed various web applications including a Chess platform and Digital Signage System. Gained strong proficiency in modern web technologies."
   },
   {
     company: "AITM, Bhatkal",
