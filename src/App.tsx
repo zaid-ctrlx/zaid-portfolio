@@ -69,12 +69,12 @@ const PROJECTS = [
     image: "/projects/resume-roster.jpg"
   },
   {
-    title: "Tic-Tac-Toe",
-    description: "A classic Tic-Tac-Toe game enhanced with an unbeatable AI opponent using Minimax algorithm. Challenge yourself against the machine.",
-    tech: ["Python", "React", "AI"],
-    link: "https://tic-tac-toe-zeta-coral-95.vercel.app",
-    github: "https://github.com/zaid-ctrlx/tic-tac-toe",
-    image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?q=80&w=2070&auto=format&fit=crop"
+    title: "Community Events Recommender",
+    description: "A mobile-first app that helps people discover niche community events tailored to their interests and location. Built with a FastAPI backend (JWT auth, PostgreSQL, SQLAlchemy) and an Expo/React Native mobile client.",
+    tech: ["React Native", "FastAPI", "PostgreSQL"],
+    link: "#",
+    github: "https://github.com/zaid-ctrlx/project",
+    image: "/projects/community-events.jpg"
   }
 ];
 
